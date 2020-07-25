@@ -8,5 +8,5 @@ public class EndPoints {
     public static final String SOURCES = "/sources";
     public static final String API_KEY = "apiKey=";
     public static final String BELARUS_SEARCH_PARAM = "?q=belarus&";
-
+    public static final String RU_SEARCH = "?country=ru&";
 }

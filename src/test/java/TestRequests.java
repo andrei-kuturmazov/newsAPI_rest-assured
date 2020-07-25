@@ -47,4 +47,14 @@ public class TestRequests extends TestInit {
                 ParseMethods.getFirstBelarusNewsTitle(response));
     }
 
+    @Test
+    @Order(4)
+    @DisplayName("Check first RU headline news source name")
+    public void checkFirstHeadlineRUSourceName() throws IOException {
+        response = given()
+                .spec(requestSpec)
+                .get(EndPoints.BASE_URL + EndPoints.TOP_HEADLINES + EndPoints.RU_SEARCH + EndPoints.API_KEY + Property.getPropertyValue("api_key"));
+        Assertions.assertEquals("RT", ParseMethods.getFirstRUNewsSourceName(response));
+    }
+
 }
