@@ -56,5 +56,4 @@ public class TestRequests extends TestInit {
                 .get(EndPoints.BASE_URL + EndPoints.TOP_HEADLINES + EndPoints.RU_SEARCH + EndPoints.API_KEY + Property.getPropertyValue("api_key"));
         Assertions.assertEquals("RT", ParseMethods.getFirstRUNewsSourceName(response));
     }
-
 }
